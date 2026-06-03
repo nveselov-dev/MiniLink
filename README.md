@@ -197,4 +197,4 @@ GitHub: [@nveselov-dev](https://github.com/nveselov-dev)
 
 ---
 
-*Проект создан в рамках подготовки к стажировке Backend Developer.*
+
