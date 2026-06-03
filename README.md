@@ -1,6 +1,6 @@
-# 🚀 MiniLink - Linktree Clone Backend
+# 🚀 MiniLink 
 
-Современный REST API сервис для создания персональных страниц со ссылками (клон Linktree). Реализован на Node.js с использованием TypeScript, Express.js и MongoDB, упакован в Docker для простоты развертывания.
+Современный REST API сервис для создания персональных страниц со ссылками. Реализован на Node.js с использованием TypeScript, Express.js и MongoDB, упакован в Docker для простоты развертывания.
 
 ## 🛠️ Стек технологий
 
