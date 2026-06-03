@@ -1,0 +1,26 @@
+### 1. Создаем пользователя
+POST http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "username": "test_user"
+}
+
+### 2. Добавляем ему ссылку
+POST http://localhost:8080/api/users/test_user/links
+Content-Type: application/json
+
+{
+  "title": "Мой GitHub",
+  "url": "https://github.com"
+}
+
+### 3. Проверяем профиль (должна появиться ссылка)
+GET http://localhost:8080/api/test_user
+
+### 4. Имитируем клик по ссылке
+# (Скопируй реальный 'id' ссылки из ответа шага 2 или 3 и вставь вместо YOUR_LINK_ID)
+PATCH http://localhost:8080/api/links/b37e832d-e01b-4a28-ad80-bdf137fa8058/click
+
+### 5. Снова проверяем профиль (clicks должен стать равен 1)
+GET http://localhost:8080/api/test_user
